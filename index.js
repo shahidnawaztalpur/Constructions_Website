@@ -118,7 +118,6 @@ fetch("data.json")
 // }
 
 // window.addEventListener("DOMContentLoaded", loadPropertyDetail);
-
 // Data fetch from JSON
 async function loadServices() {
   const response = await fetch("property.json"); // file ka naam
@@ -170,7 +169,14 @@ async function loadPropertyDetail() {
   const container = document.getElementById("property");
   if (!container) return; // agar index.html pe ho to skip kare
 
-  const id = localStorage.getItem("propertyId");
+  let id = localStorage.getItem("propertyId");
+
+  // 👉 Agar direct property.html open ho to default id=1 set kar do
+  if (!id) {
+    id = 1;
+    localStorage.setItem("propertyId", id);
+  }
+
   const services = await loadServices();
   const property = services.find(s => s.id == id);
 
