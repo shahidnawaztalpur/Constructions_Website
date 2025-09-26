@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Layout</title>
+  
+  <!-- main CSS -->
+  <!-- <link rel="stylesheet" href="blog.css"> -->
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="index.css"> -->
+  <!-- <link rel="stylesheet" href="mediaQuery.css"> -->
+    
+</head>
+<body>
+
+  <header class="min-vh-100" style="background: url('images/pexels-olgalioncat-7245333.jpg') no-repeat center center/cover;">
+    <div class="h-100; w-100;">
+    <!-- Overlay for readability -->
+    <div class="bg-dark bg-opacity-50">
+      
+      <div class="text-light py-2 border-bottom border-light d-none d-lg-block">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+          <!-- Left Info -->
+          <div class="d-flex gap-3 small">
+            <span><i class="fa-solid fa-phone"></i> +92 123-4567890</span>
+            <span><i class="fa-solid fa-envelope"></i> info@construction.com</span>
+            <span><i class="fa-regular fa-clock"></i> Mon - Sat 9:00 - 18:00, Sunday Closed</span>
+          </div>
+          <!-- Right Social Icons -->
+          <div class="d-flex gap-3">
+            <a href="#"><i class="fa-brands fa-twitter text-light"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook text-light"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin text-light"></i></a>
+            <a href="#"><i class="fa-brands fa-google text-light"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Main Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/Wsparcie techniczne ikona.png" alt="Logo" width="40" height="40" class="me-2 rounded">
+            <span class="fw-bold">CONSTRUCTIONS</span>
+          </a>
+  
+          <!-- Toggle Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="detail.html">Services</a></li>
+  
+              <!-- Blog Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="blog.html" id="blogDropdown" role="button" data-bs-toggle="dropdown">
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                  <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
+                </ul>
+              </li>
+  
+              <!-- Pages Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="page_element.html">Element</a></li>
+                  <li><a class="dropdown-item" href="property.html">Projects Details</a></li>
+                  <li><a class="dropdown-item" href="services.html">Services Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+  
+            <!-- Contact Button -->
+            <a href="#" class="btn btn-primary ms-lg-3">CONTACT NOW</a>
+          </div>
+        </div>
+      </nav>
+  
+    </div>
+  </header>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Heading -->
+        <h2 class="mb-3">Our Mission</h2>
+  
+        <!-- Paragraph with 6 lines -->
+        <p>
+          We are dedicated to delivering the best construction services that match international standards.  
+          Our team of skilled professionals ensures high-quality work with attention to detail.  
+          We believe in transparency, trust, and timely delivery of projects.  
+          Each project is carefully planned to meet client satisfaction and requirements.  
+          Innovation and modern technology are at the core of our working process.  
+          Our ultimate goal is to build not just structures, but lasting relationships with our clients.  
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5">
+    <h2 class="mb-4">All Useful Links</h2>
+  
+    <!-- Line 1 -->
+    <div class="mb-3">
+      <a href="#">Default Link</a>
+      <button class="btn btn-primary mx-1">Btn 1</button>
+      <button class="btn btn-primary mx-1">Btn 2</button>
+      <button class="btn btn-primary mx-1">Btn 3</button>
+      <button class="btn btn-primary mx-1">Btn 4</button>
+      <button class="btn btn-primary mx-1">Btn 5</button>
+      <button class="btn btn-primary mx-1">Btn 6</button>
+      <a href="#">Link Name</a>
+      <a href="#">Default Link</a>
+    </div>
+  
+    <!-- Line 2 -->
+    <div class="mb-5">
+      <a href="#">Default Link</a>
+      <button class="btn btn-secondary mx-1">Btn A</button>
+      <button class="btn btn-secondary mx-1">Btn B</button>
+      <button class="btn btn-secondary mx-1">Btn C</button>
+      <button class="btn btn-secondary mx-1">Btn D</button>
+      <button class="btn btn-secondary mx-1">Btn E</button>
+      <button class="btn btn-secondary mx-1">Btn F</button>
+      <a href="#">Link Name</a>
+      <a href="#">Default Link</a>
+    </div>
+  
+    <!-- Line 3 -->
+    <div class="mb-3">
+      <a href="#">Default Link</a>
+      <button class="btn btn-success mx-1">Btn 7</button>
+      <button class="btn btn-success mx-1">Btn 8</button>
+      <button class="btn btn-success mx-1">Btn 9</button>
+      <button class="btn btn-success mx-1">Btn 10</button>
+      <button class="btn btn-success mx-1">Btn 11</button>
+      <button class="btn btn-success mx-1">Btn 12</button>
+      <a href="#">Link Name</a>
+      <a href="#">Default Link</a>
+    </div>
+  
+    <!-- Line 4 -->
+    <div class="mb-5">
+      <a href="#">Default Link</a>
+      <button class="btn btn-danger mx-1">Btn G</button>
+      <button class="btn btn-danger mx-1">Btn H</button>
+      <button class="btn btn-danger mx-1">Btn I</button>
+      <button class="btn btn-danger mx-1">Btn J</button>
+      <button class="btn btn-danger mx-1">Btn K</button>
+      <button class="btn btn-danger mx-1">Btn L</button>
+      <a href="#">Link Name</a>
+      <a href="#">Default Link</a>
+    </div>
+  
+    <!-- Line 5 -->
+    <div class="mb-3">
+      <a href="#">Default Link</a>
+      <button class="btn btn-warning mx-1">Btn 13</button>
+      <button class="btn btn-warning mx-1">Btn 14</button>
+      <button class="btn btn-warning mx-1">Btn 15</button>
+      <button class="btn btn-warning mx-1">Btn 16</button>
+      <button class="btn btn-warning mx-1">Btn 17</button>
+      <button class="btn btn-warning mx-1">Btn 18</button>
+      <a href="#">Link Name</a>
+      <a href="#">Default Link</a>
+    </div>
+  
+    <!-- Line 6 -->
+    <div class="mb-5">
+      <a href="#">Default Link</a>
+      <button class="btn btn-info mx-1">Btn M</button>
+      <button class="btn btn-info mx-1">Btn N</button>
+      <button class="btn btn-info mx-1">Btn O</button>
+      <button class="btn btn-info mx-1">Btn P</button>
+      <button class="btn btn-info mx-1">Btn Q</button>
+      <button class="btn btn-info mx-1">Btn R</button>
+      <a href="#">Link Name</a>
+      <a href="#">Default Link</a>
+    </div>
+  
+    <!-- Line 7 -->
+    <div class="mb-3">
+      <a href="#">Default Link</a>
+      <button class="btn btn-light mx-1">Btn 19</button>
+      <button class="btn btn-light mx-1">Btn 20</button>
+      <button class="btn btn-light mx-1">Btn 21</button>
+      <button class="btn btn-light mx-1">Btn 22</button>
+      <button class="btn btn-light mx-1">Btn 23</button>
+      <button class="btn btn-light mx-1">Btn 24</button>
+      <a href="#">Link Name</a>
+      <a href="#">Default Link</a>
+    </div>
+  
+    <!-- Line 8 -->
+    <div class="mb-5">
+      <a href="#">Default Link</a>
+      <button class="btn btn-dark mx-1">Btn S</button>
+      <button class="btn btn-dark mx-1">Btn T</button>
+      <button class="btn btn-dark mx-1">Btn U</button>
+      <button class="btn btn-dark mx-1">Btn V</button>
+      <button class="btn btn-dark mx-1">Btn W</button>
+      <button class="btn btn-dark mx-1">Btn X</button>
+      <a href="#">Link Name</a>
+      <a href="#">Default Link</a>
+    </div>
+  
+    <!-- Line 9 -->
+    <div class="mb-3">
+      <a href="#">Default Link</a>
+      <button class="btn btn-outline-primary mx-1">Btn 25</button>
+      <button class="btn btn-outline-primary mx-1">Btn 26</button>
+      <button class="btn btn-outline-primary mx-1">Btn 27</button>
+      <button class="btn btn-outline-primary mx-1">Btn 28</button>
+      <button class="btn btn-outline-primary mx-1">Btn 29</button>
+      <button class="btn btn-outline-primary mx-1">Btn 30</button>
+      <a href="#">Link Name</a>
+      <a href="#">Default Link</a>
+    </div>
+  
+    <!-- Line 10 -->
+    <div class="mb-5">
+      <a href="#">Default Link</a>
+      <button class="btn btn-outline-danger mx-1">Btn Y</button>
+      <button class="btn btn-outline-danger mx-1">Btn Z</button>
+      <button class="btn btn-outline-danger mx-1">Btn AA</button>
+      <button class="btn btn-outline-danger mx-1">Btn AB</button>
+      <button class="btn btn-outline-danger mx-1">Btn AC</button>
+      <button class="btn btn-outline-danger mx-1">Btn AD</button>
+      <a href="#">Link Name</a>
+      <a href="#">Default Link</a>
+    </div>
+  </div>
+
+
+  
+    <div class="container">
+      <!-- Main heading for the page -->
+
+  
+      <!-- Section 1: Image right, text left, heading over image -->
+      <section class="py-5">
+        <div class="row align-items-center">
+          <!-- Text on the left -->
+          <div class="col-md-6">
+            <h3>Text Left Side</h3>
+            <p>Yahan par aap apna text rakh saktay hain. Yeh section image ke side par left mein nazar aayega jab screen medium ya us se badi hogi.</p>
+            <ul>
+              <li>Point 1</li>
+              <li>Point 2</li>
+              <li>Point 3</li>
+            </ul>
+          </div>
+  
+          <!-- Image on the right with overlay heading -->
+          <div class="col-md-6 position-relative">
+            <img src="images/servicess2.png.webp" alt="Image Right" class="img-fluid rounded shadow-sm">
+            <div class="position-absolute top-0 start-0 bg-dark bg-opacity-50 text-white px-3 py-2 fw-semibold rounded mt-2 ms-2">Image Ka Heading</div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Section 2: Image left, text right, heading over image -->
+      <section class="py-5 bg-white rounded p-3">
+        <div class="row align-items-center">
+          <!-- Image on the left with overlay heading -->
+          <div class="col-md-6 position-relative">
+            <img src="images/team1.png.webp" alt="Image Left" class="img-fluid rounded shadow-sm">
+            <div class="position-absolute top-0 start-0 bg-dark bg-opacity-50 text-white px-3 py-2 fw-semibold rounded mt-2 ms-2">Image Ka Heading</div>
+          </div>
+  
+          <!-- Text on the right -->
+          <div class="col-md-6">
+            <h3>Text Right Side</h3>
+            <p>Yeh second section hai jisme image left par aur text right par hogi — responsive layout Bootstrap grid se banaya gaya hai.</p>
+            <p>Small screens par dono stacked hongay (image phir text) — medium screens se side-by-side honge.</p>
+          </div>
+        </div>
+      </section>
+  
+    </div>
+  
+  
+    
+    
+      <div class="container py-5">
+        <!-- Main heading for the page -->
+        <h1 class="mb-4 text-center">Aik Heading aur Image-Text Layout</h1>
+    
+        <!-- Three boxes in one line -->
+        <section class="mb-5">
+          <div class="row g-4">
+            <div class="col-12 col-md-4">
+              <div class="card h-100 text-center shadow-sm">
+                <div class="card-body d-flex flex-column justify-content-start">
+                  <h5 class="card-title">Box 1 - Aik Heading</h5>
+                  <h6 class="card-subtitle mb-3 text-muted">Box 1 - Doosri Heading</h6>
+                  <p class="card-text">Yeh box 1 ka text hai. Aap yahan chhota sa description ya koi aur information daal saktay hain.</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-12 col-md-4">
+              <div class="card h-100 text-center shadow-sm">
+                <div class="card-body d-flex flex-column justify-content-start">
+                  <h5 class="card-title">Box 2 - Aik Heading</h5>
+                  <h6 class="card-subtitle mb-3 text-muted">Box 2 - Doosri Heading</h6>
+                  <p class="card-text">Yeh box 2 ka text hai. Bootstrap grid responsive hai — mobile par yeh stacked ho jayenge.</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col-12 col-md-4">
+              <div class="card h-100 text-center shadow-sm">
+                <div class="card-body d-flex flex-column justify-content-start">
+                  <h5 class="card-title">Box 3 - Aik Heading</h5>
+                  <h6 class="card-subtitle mb-3 text-muted">Box 3 - Doosri Heading</h6>
+                  <p class="card-text">Yeh box 3 ka text hai. Aap headings aur text apni marzi se change kar sakte hain.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>    
+      </div>
+    
+    
+      <div class="container my-4">
+        <div class="row">
+          <h4>Heading 1</h4>
+          <div class="col-md-12 border-start border-2 border-dark ps-3">
+            <p>Yeh box ka text hai. Sirf right side align kiya gaya hai aur left side vertical line hai. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo qui repellendus tempore alias consequatur facere, repudiandae incidunt iste?</p>
+          </div>
+        </div>
+      </div>
+            
+      
+      <div class="container my-4">
+        <h4>Table</h4>
+        <table class="table table-hover align-middle">
+          <thead class="table-light">
+            <tr>
+              <th>#</th>
+              <th>COUNTRIES</th>
+              <th>VISITS</th>
+              <th>PERCENTAGES</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01</td>
+              <td><img src="https://flagcdn.com/24x18/ca.png" alt="Canada"> Canada</td>
+              <td>645032</td>
+              <td>
+                <div class="progress" style="height:6px;">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>02</td>
+              <td><img src="https://flagcdn.com/24x18/us.png" alt="USA"> USA</td>
+              <td>645032</td>
+              <td>
+                <div class="progress" style="height:6px;">
+                  <div class="progress-bar bg-danger" role="progressbar" style="width: 40%;"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>03</td>
+              <td><img src="https://flagcdn.com/24x18/gb.png" alt="UK"> UK</td>
+              <td>645032</td>
+              <td>
+                <div class="progress" style="height:6px;">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td><img src="https://flagcdn.com/24x18/de.png" alt="Germany"> Germany</td>
+              <td>645032</td>
+              <td>
+                <div class="progress" style="height:6px;">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 70%;"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>05</td>
+              <td><img src="https://flagcdn.com/24x18/au.png" alt="Australia"> Australia</td>
+              <td>645032</td>
+              <td>
+                <div class="progress" style="height:6px;">
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 50%;"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>06</td>
+              <td><img src="https://flagcdn.com/24x18/cn.png" alt="China"> China</td>
+              <td>645032</td>
+              <td>
+                <div class="progress" style="height:6px;">
+                  <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;"></div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>07</td>
+              <td><img src="https://flagcdn.com/24x18/bd.png" alt="Bangladesh"> Bangladesh</td>
+              <td>645032</td>
+              <td>
+                <div class="progress" style="height:6px;">
+                  <div class="progress-bar bg-purple" role="progressbar" style="width: 40%; background-color: #6f42c1;"></div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+
+
+
+
+
+
+      
+
+<div class="container my-5">
+  <!-- Heading -->
+  <h2 class="text-center mb-4">Images Gallery</h2>
+
+  <!-- First Row: 3 Images -->
+  <div class="row mb-3">
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" class="img-fluid rounded" alt="Image 1">
+    </div>
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1552083375-1447ce886485" class="img-fluid rounded" alt="Image 2">
+    </div>
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1552083375-1447ce886485" class="img-fluid rounded" alt="Image 3">
+    </div>
+  </div>
+
+  <!-- Second Row: 2 Images -->
+  <div class="row mb-3 justify-content-center">
+    <div class="col-md-6">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="img-fluid rounded" alt="Image 4">
+    </div>
+    <div class="col-md-6">
+      <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba" class="img-fluid rounded" alt="Image 5">
+    </div>
+  </div>
+
+  <!-- Third Row: 3 Images -->
+  <div class="row mb-3">
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1516496636080-14fb876e029d" class="img-fluid rounded" alt="Image 6">
+    </div>
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1516496636080-14fb876e029d" class="img-fluid rounded" alt="Image 7">
+    </div>
+    <div class="col-md-4">
+      <img src="https://images.unsplash.com/photo-1516496636080-14fb876e029d" class="img-fluid rounded" alt="Image 8">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Section -->
+<footer class="bg-dark text-light pt-5 mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        
+        <!-- About Section -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3 class="mb-3"><i class="fa-solid fa-building"></i> Prime Construction</h3>
+          <p>
+            We are a trusted construction company in Pakistan, delivering
+            high-quality residential and commercial projects with modern
+            designs and reliable project management.
+          </p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-6 col-md-6 col-lg-3">
+          <h3 class="mb-3">Quick Links</h3>
+          <ul class="list-unstyled">
+            <li><a href="#about" class="text-light text-decoration-none d-block mb-2">About Us</a></li>
+            <li><a href="#services" class="text-light text-decoration-none d-block mb-2">Our Services</a></li>
+            <li><a href="#projects" class="text-light text-decoration-none d-block mb-2">Recent Projects</a></li>
+            <li><a href="#contact" class="text-light text-decoration-none d-block">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Section -->
+        <div class="col-6 col-md-6 col-lg-3">
+          <h3 class="mb-3">Contact</h3>
+          <p>Office #12, Main Boulevard, Gulshan-e-Iqbal, Karachi</p>
+          <p>Phone: +92 21 123 4567</p>
+          <p>Cell: +92 333 9876543</p>
+          <p>Email: info@primeconstruction.com</p>
+        </div>
+  
+        <!-- Newsletter -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3 class="mb-3">Newsletter</h3>
+          <form class="d-flex mb-3">
+            <input type="email" class="form-control me-2" placeholder="Enter your email">
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+          <div class="map">
+            <img src="images/map-footer.png.webp" alt="World Map" class="img-fluid w-100" style="max-height:200px; object-fit:cover;">
+          </div>
+          
+        </div>
+  
+      </div>
+    </div>
+  
+    <!-- Footer Bottom -->
+    <div class="bg-dark text-center py-3 mt-4 border-top border-secondary">
+      <p class="mb-0">
+        © 2025 Prime Construction | Built with <span class="text-danger">❤</span> by 
+        <a href="#" class="text-white text-decoration-none">Web Agency</a>
+      </p>
+    </div>
+  </footer>
+  
+     
+    
+  
+  </body>
+  <script src="index.js"></script>
+  </html>
+  
+  

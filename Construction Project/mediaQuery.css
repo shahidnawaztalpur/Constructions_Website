@@ -1,0 +1,523 @@
+/* ================= MOBILE RESPONSIVE (0px – 480px) ================= */
+@media (max-width: 480px) {
+
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* Horizontal overflow band */
+  }
+  
+
+  /* Main heading */
+  .main-heading {
+    font-size: 180%;
+    text-align: center;
+  }
+
+  /* Top bar */
+  .top-bar {
+    display: none;
+    flex-direction: column;
+    padding: 10px 20px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .header-info span {
+    margin-right: 10px;
+  }
+
+  /* Navbar */
+  .main-navbar {
+    flex-direction: column;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .contact-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  /* Services Section */
+  .service-cards {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .service-card {
+    height: 70vh;
+  }
+
+  .service-card img {
+    height: 180px;
+  }
+
+  /* Our Story Section */
+  .our-story {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 38%;
+  }
+
+  .story-left-card {
+    padding: 5%;
+  }
+
+  .story-right-card img {
+    width: 100%;
+  }
+
+  .right-card-badge{
+    top: 76%;
+  }
+
+  
+  .right-card-badge span{
+    font-size: 1rem;
+  }
+
+  .story-btn {
+    width: 100%;
+  }
+
+
+
+  /* Properties */
+  .properties-info-card {
+    grid-template-columns: 1fr;
+  }
+
+  .property-card img {
+    height: 250px;
+  }
+
+  .properties-nav ul {
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Talking Section */
+  .talk-us {
+    padding: 30px 15px;
+  }
+
+
+  .talk-us .talking-heading::before {
+    top: 20px;
+    left: 20px;
+    font-size: 42px;
+  }
+  
+
+  .talking-heading,
+  .talking-paragraph {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .talking-btn {
+    width: 50%;
+    margin: 20px auto 0;
+  }
+
+  /* Card */
+  .card {
+    width: 90%;
+    margin: 20px auto;
+    position: relative;
+  }
+
+  .tool-heading,
+  .heading-text {
+    grid-template-columns: 1fr;
+  }
+
+  /* Team Section */
+
+  .team {
+    grid-template-columns: 1fr; /* sirf 1 column */
+         /* text aur content center */
+  }
+
+  .team img {
+    display: block;
+    margin: 0 auto;             /* image ko bilkul center lane ke liye */
+  }
+
+
+  /* Testimonials */
+  .testimonial-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+
+  /* News Section */
+  .news-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card-news h4 {
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ================= TABLET RESPONSIVE (481px – 768px) ================= */
+@media (min-width: 481px) and (max-width: 768px) {
+
+
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* Horizontal overflow band */
+  }
+
+
+
+  /* Main heading */
+  .main-heading {
+    font-size: 220%;
+    text-align: center;
+  }
+
+  /* Top bar */
+  .top-bar {
+    flex-direction: column;
+    padding: 15px 25px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .header-info span {
+    margin-right: 10px;
+  }
+
+  /* Navbar */
+  .main-navbar {
+    flex-direction: column;
+    padding: 15px 25px;
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .contact-button {
+    margin-top: 10px;
+    padding: 12px 18px;
+    font-size: 15px;
+  }
+
+  /* Services Section */
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: auto;
+  }
+
+  .service-card {
+    height: auto;
+  }
+
+  .service-card img {
+    height: 180px;
+  }
+
+  /* Our Story Section */
+  .our-story {
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 90px;
+  }
+
+  .story-left-card {
+    padding: 0%;
+  }
+
+  .story-right-card img {
+    width: 100%;
+  }
+
+
+  .right-card-badge{
+    width: 20%;
+    height: 25%;
+    top: 75%;
+  }
+
+  .right-card-badge span{
+    font-size: 2rem;
+    padding: 3% 10%;
+  }
+
+
+  .story-btn {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+
+
+
+  /* Properties */
+  .properties-info-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .property-card img {
+    height: 300px;
+  }
+
+  .properties-nav ul {
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Talking Section */
+  .talk-us {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .talking-heading,
+  .talking-paragraph {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .talking-btn {
+    width: 40%;
+    margin: 20px auto 0;
+  }
+
+  /* Card */
+  .card {
+    width: 85%;
+    margin: 20px auto;
+    position: relative;
+  }
+
+  .tool-heading,
+  .heading-text {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Team Section */
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Testimonials */
+  .testimonial-section {
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  .heading {
+    font-size: 48px;
+    margin-top: 30px;
+  }
+
+  /* News Section */
+  .news-section {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .card-news h4 {
+    font-size: 1.1rem;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+/* ================= LAPTOP RESPONSIVE (769px – 1024px) ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* Horizontal overflow band */
+  }
+
+
+  /* Main heading */
+  .main-heading {
+    font-size: 250%;
+    text-align: center;
+  }
+
+  /* Top bar */
+  .top-bar {
+    padding: 15px 40px;
+    font-size: 14px;
+  }
+
+  .header-info span {
+    margin-right: 20px;
+  }
+
+  /* Navbar */
+  .main-navbar {
+    padding: 15px 40px;
+  }
+
+  .nav-menu {
+    gap: 20px;
+  }
+
+  .contact-button {
+    padding: 12px 22px;
+    font-size: 16px;
+  }
+
+  /* Services Section */
+  .service-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .service-card img {
+    height: 200px;
+  }
+
+  /* Our Story Section */
+  .our-story {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .story-left-card {
+    padding: 8%;
+  }
+
+  .story-right-card img {
+    width: 85%;
+  }
+
+  .story-btn {
+    width: 35%;
+  }
+
+  /* Properties */
+  .properties-info-card {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .property-card img {
+    height: 280px;
+  }
+
+  .properties-nav ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Talking Section */
+  .talk-us {
+    padding: 60px 40px;
+    height: auto;
+  }
+
+  .talking-heading {
+    font-size: 32px;
+  }
+
+  .talking-paragraph {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .talking-btn {
+    width: 30%;
+    margin: 30px auto 0;
+  }
+
+  /* Card */
+  .card {
+    width: 75%;
+    margin: 30px auto;
+  }
+
+  .tool-heading,
+  .heading-text {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Team Section */
+  .team {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  /* Testimonials */
+  .testimonial-section {
+    padding: 60px 50px;
+  }
+
+  .heading {
+    font-size: 52px;
+  }
+
+  /* News Section */
+  .news-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  /* Footer */
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
