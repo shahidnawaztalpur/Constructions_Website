@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Layout</title>
+  
+  <!-- main CSS -->
+  <!-- <link rel="stylesheet" href="blog.css"> -->
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="index.css"> -->
+  <!-- <link rel="stylesheet" href="mediaQuery.css"> -->
+    
+</head>
+<body>
+
+  <header class="min-vh-100" style="background: url('images/pexels-olgalioncat-7245333.jpg') no-repeat center center/cover;">
+    <div class="h-100; w-100;">
+    <!-- Overlay for readability -->
+    <div class="bg-dark bg-opacity-50">
+      
+      <div class="text-light py-2 border-bottom border-light d-none d-lg-block">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+          <!-- Left Info -->
+          <div class="d-flex gap-3 small">
+            <span><i class="fa-solid fa-phone"></i> +92 123-4567890</span>
+            <span><i class="fa-solid fa-envelope"></i> info@construction.com</span>
+            <span><i class="fa-regular fa-clock"></i> Mon - Sat 9:00 - 18:00, Sunday Closed</span>
+          </div>
+          <!-- Right Social Icons -->
+          <div class="d-flex gap-3">
+            <a href="#"><i class="fa-brands fa-twitter text-light"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook text-light"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin text-light"></i></a>
+            <a href="#"><i class="fa-brands fa-google text-light"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Main Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/Wsparcie techniczne ikona.png" alt="Logo" width="40" height="40" class="me-2 rounded">
+            <span class="fw-bold">CONSTRUCTIONS</span>
+          </a>
+  
+          <!-- Toggle Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="detail.html">Services</a></li>
+  
+              <!-- Blog Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="blog.html" id="blogDropdown" role="button" data-bs-toggle="dropdown">
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                  <li><a class="dropdown-item" href="blog_details.html">Blog Details</a></li>
+                </ul>
+              </li>
+  
+              <!-- Pages Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="page_element.html">Element</a></li>
+                  <li><a class="dropdown-item" href="property.html">Projects Details</a></li>
+                  <li><a class="dropdown-item" href="services.html">Services Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+  
+            <!-- Contact Button -->
+            <a href="#" class="btn btn-primary ms-lg-3">CONTACT NOW</a>
+          </div>
+        </div>
+      </nav>
+  
+    </div>
+  </header>
+
+
+<!-- MAIN CONTENT WITH SIDEBAR -->
+<div class="container mt-5">
+  <div class="row">
+    
+    <!-- LEFT SIDEBAR -->
+    <aside class="col-md-4 order-2 order-md-2 mt-6">
+
+      <!-- Search -->
+      <div class="card mb-4 p-3">
+        <h5>Search Projects</h5>
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" placeholder="Search buildings...">
+          <span class="input-group-text"><i class="bi bi-search"></i></span>
+        </div>
+        <button class="btn btn-primary w-100">Search</button>
+      </div>
+
+      <!-- Categories -->
+      <div class="card mb-4 p-3">
+        <h5>Construction Services</h5>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Residential Projects</li>
+          <li class="list-group-item">Commercial Buildings</li>
+          <li class="list-group-item">Renovation</li>
+          <li class="list-group-item">Interior Designing</li>
+          <li class="list-group-item">Road Construction</li>
+          <li class="list-group-item">Industrial Projects</li>
+        </ul>
+      </div>
+
+      <!-- Recent Posts -->
+      <div class="card mb-4 p-3">
+        <h5>Recent Projects</h5>
+        <div class="d-flex mb-3">
+          <div class="col-4"><img src="images/servicess1.png.webp" class="img-fluid rounded"></div>
+          <div>
+            <h6>Luxury Villa Design</h6>
+            <small class="text-muted">Completed in Karachi</small>
+          </div>
+        </div>
+        <div class="d-flex mb-3">
+          <div class="col-4"><img src="images/servicess2.png.webp" class="img-fluid rounded"></div>
+          <div>
+            <h6>Shopping Mall Project</h6>
+            <small class="text-muted">Under Construction</small>
+          </div>
+        </div>
+        <div class="d-flex mb-3">
+          <div class="col-4"><img src="images/servicess3.png.webp" class="img-fluid rounded"></div>
+          <div>
+            <h6>Highway Bridge</h6>
+            <small class="text-muted">Completed in Lahore</small>
+          </div>
+        </div>
+        <div class="d-flex">
+          <div class="col-4"><img src="images/team1.png.webp" class="img-fluid rounded"></div>
+          <div>
+            <h6>Office Renovation</h6>
+            <small class="text-muted">Interior Designing</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tag Cloud -->
+      <div class="card mb-4 p-3">
+        <h5>Popular Tags</h5>
+        <div class="d-flex flex-wrap gap-4">
+          <button class="btn btn-outline-secondary btn-sm">Building</button>
+          <button class="btn btn-outline-secondary btn-sm">Architecture</button>
+          <button class="btn btn-outline-secondary btn-sm">Concrete</button>
+          <button class="btn btn-outline-secondary btn-sm">Interior</button>
+          <button class="btn btn-outline-secondary btn-sm">Design</button>
+          <button class="btn btn-outline-secondary btn-sm">Contract</button>
+          <button class="btn btn-outline-secondary btn-sm">Steel</button>
+          <button class="btn btn-outline-secondary btn-sm">Road</button>
+        </div>
+      </div>
+
+      <!-- Instagram Feed -->
+      <div class="card mb-4 p-3">
+        <h5>Project Gallery</h5>
+        <div class="row g-2">
+          <div class="col-4"><img src="images/servicess1.png.webp" class="img-fluid rounded"></div>
+          <div class="col-4"><img src="images/servicess2.png.webp" class="img-fluid rounded"></div>
+          <div class="col-4"><img src="images/servicess3.png.webp" class="img-fluid rounded"></div>
+          <div class="col-4"><img src="images/team1.png.webp" class="img-fluid rounded"></div>
+          <div class="col-4"><img src="images/team2.png.webp" class="img-fluid rounded"></div>
+          <div class="col-4"><img src="images/team1.png.webp" class="img-fluid rounded"></div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="card p-3">
+        <h5>Subscribe Newsletter</h5>
+        <input type="email" class="form-control mb-2" placeholder="Enter your email">
+        <button class="btn btn-dark w-100">Subscribe</button>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="col-12 col-md-6 order-1 order-md-1 mt-6">
+
+      <!-- Card Example -->
+      <div class="card mb-4" style="width: 100%;">
+        <img src="images/team1.png.webp" class="card-img-top" alt="Sample Image">
+        <div class="card-body">
+          <h5 class="card-title">Ongoing Metro Construction</h5>
+          <div class="d-flex gap-2 mb-3">
+            <button class="btn btn-primary">
+              <i class="bi bi-building"></i> Project
+            </button>
+            <button class="btn btn-secondary">
+              <i class="bi bi-chat-dots"></i> Updates
+            </button>
+          </div>
+          <p class="card-text">Our company is working on state-of-the-art metro stations with modern architecture and durable construction.</p>
+          <div class="border-start ps-3 mb-2">
+            Quality materials and experienced engineers ensure project success.
+          </div>
+          <p><i class="bi bi-heart-fill text-dark"></i> Trusted by 500+ clients.</p>
+        </div>
+      </div>
+
+      <!-- Circle Image + Left Text -->
+      <div class="row align-items-center">
+        <div class="col-md-8 order-md-2">
+          <h4 class="mb-2">Why Choose Us?</h4>
+          <p>We provide reliable construction services with safety, quality, and timely delivery as our top priorities.</p>
+        </div>
+        <div class="col-md-2 order-md-1 text-center">
+          <img src="images/team2.png.webp" class="rounded-circle img-fluid" alt="Circle Image">
+        </div>
+      </div>
+
+      <!-- Comments / Feedback -->
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-12 mx-auto">
+            
+            <div class="comment-heading">Client Feedback</div>
+            <!-- Card 1 -->
+            <div class="card mb-4 comment-card">
+              <div class="card-body d-flex align-items-start">
+                <div class="me-3" style="flex:0 0 90px;">
+                  <img src="images/servicess1.png.webp" alt="client" class="img-fluid rounded">
+                </div>
+                <div style="flex:1;">
+                  <p class="mb-2">“They completed our office building before deadline with excellent finishing.”</p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div>
+                      <div class="fw-semibold">Ali Construction Ltd.</div>
+                      <div class="small-words mt-1">
+                        <span>commercial</span>
+                        <span>Karachi</span>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-outline-primary reply-btn">Reply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 2 -->
+            <div class="card mb-4 comment-card">
+              <div class="card-body d-flex align-items-start">
+                <div class="me-3" style="flex:0 0 90px;">
+                  <img src="images/servicess2.png.webp" alt="client2" class="img-fluid rounded">
+                </div>
+                <div style="flex:1;">
+                  <p class="mb-2">“Best team for renovation, they handled everything professionally.”</p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div>
+                      <div class="fw-semibold">Sara Builders</div>
+                      <div class="small-words mt-1">
+                        <span>renovation</span>
+                        <span>Lahore</span>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-outline-primary reply-btn">Reply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Card 3 -->
+            <div class="card mb-4 comment-card">
+              <div class="card-body d-flex align-items-start">
+                <div class="me-3" style="flex:0 0 90px;">
+                  <img src="images/servicess3.png.webp" alt="client3" class="img-fluid rounded">
+                </div>
+                <div style="flex:1;">
+                  <p class="mb-2">“Their road construction work is highly durable and up to international standards.”</p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div>
+                      <div class="fw-semibold">Bilal Developers</div>
+                      <div class="small-words mt-1">
+                        <span>road project</span>
+                        <span>Islamabad</span>
+                      </div>
+                    </div>
+                    <div>
+                      <button class="btn btn-outline-primary reply-btn">Reply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    
+  </div>
+</div>
+
+
+
+  <!-- Wrapper -->
+<div class="col-10 mx-auto">
+
+  <!-- Heading -->
+  <h2 class="mb-3 text-start">Contact Us</h2>
+
+  <!-- Form -->
+  <form>
+    <!-- Textarea -->
+    <div class="mb-3">
+      <textarea id="message" class="form-control" rows="5" placeholder="Write your message..."></textarea>
+    </div>
+
+    <!-- Name + Email row -->
+    <div class="row g-3 mb-3">
+      <div class="col-12 col-md-6">
+        <input type="text" id="name" class="form-control" placeholder="Name">
+      </div>
+      <div class="col-12 col-md-6">
+        <input type="email" id="email" class="form-control" placeholder="Email">
+      </div>
+    </div>
+
+    <!-- Website -->
+    <div class="mb-3">
+      <input type="url" id="website" class="form-control" placeholder="Website">
+    </div>
+
+    <!-- Button (centered) -->
+    <div class="d-flex">
+      <button type="submit" class="btn btn-primary w-auto">Send Message</button>
+    </div>
+  </form>
+</div>
+
+
+<!-- Footer Section -->
+<footer class="bg-dark text-light pt-5 mt-5">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <!-- About Section -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h3 class="mb-3"><i class="fa-solid fa-building"></i> Prime Construction</h3>
+        <p>
+          We are a trusted construction company in Pakistan, delivering
+          high-quality residential and commercial projects with modern
+          designs and reliable project management.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-6 col-md-6 col-lg-3">
+        <h3 class="mb-3">Quick Links</h3>
+        <ul class="list-unstyled">
+          <li><a href="#about" class="text-light text-decoration-none d-block mb-2">About Us</a></li>
+          <li><a href="#services" class="text-light text-decoration-none d-block mb-2">Our Services</a></li>
+          <li><a href="#projects" class="text-light text-decoration-none d-block mb-2">Recent Projects</a></li>
+          <li><a href="#contact" class="text-light text-decoration-none d-block">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="col-6 col-md-6 col-lg-3">
+        <h3 class="mb-3">Contact</h3>
+        <p>Office #12, Main Boulevard, Gulshan-e-Iqbal, Karachi</p>
+        <p>Phone: +92 21 123 4567</p>
+        <p>Cell: +92 333 9876543</p>
+        <p>Email: info@primeconstruction.com</p>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h3 class="mb-3">Newsletter</h3>
+        <form class="d-flex mb-3">
+          <input type="email" class="form-control me-2" placeholder="Enter your email">
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+        <div class="map">
+          <img src="images/map-footer.png.webp" alt="World Map" class="img-fluid w-100" style="max-height:200px; object-fit:cover;">
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="bg-dark text-center py-3 mt-4 border-top border-secondary">
+    <p class="mb-0">
+      © 2025 Prime Construction | Built with <span class="text-danger">❤</span> by 
+      <a href="#" class="text-white text-decoration-none">Web Agency</a>
+    </p>
+  </div>
+</footer>
+
+   
+  
+
+</body>
+<script src="index.js"></script>
+</html>
+
